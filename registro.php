@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Registro</title>
 
 </head>
+<link rel="stylesheet" href="estilos.css">
 <body>
     <form method="post">
         <h2>Registro</h2>
@@ -60,5 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit">Crear cuenta</button>
     </form>
+    <hr>
+    <a href="login.html">Iniciar sesion</a>
 </body>
 </html>

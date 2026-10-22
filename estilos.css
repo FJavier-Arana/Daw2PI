@@ -1,0 +1,152 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CUERPO ===== */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+    width: 380px;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== TITULO ===== */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* ===== LABELS ===== */
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 14px 16px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    border-color: #00c6ff;
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 0 12px rgba(0, 198, 255, 0.3);
+}
+
+/* ===== BOTÓN ===== */
+button {
+    margin-top: 10px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ===== ENLACE ===== */
+body > a {
+    margin-top: 20px;
+
+    color: #00c6ff;
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+body > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ===== HR ===== */
+hr {
+    width: 380px;
+    margin: 25px 0;
+
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+
+    form {
+        width: 90%;
+        padding: 30px 25px;
+    }
+
+    hr {
+        width: 90%;
+    }
+}

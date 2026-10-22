@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Configuración editable
+
 $maxIntentos = 3;
 $minutosBloqueo = 15;
 $dsn = 'mysql:host=localhost;dbname=chema;charset=utf8mb4';
@@ -106,6 +106,7 @@ if ($usuario === '' || $clave === '') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <form method="post" action="login2.php">
